@@ -1,0 +1,75 @@
+.team{
+    width: 100%;
+    background: radial-gradient(2500px at 50% 660px, white, #cac9ca);
+    background: -webkit-radial-gradient(2500px at 50% 660px, white, #cac9ca);
+    background: -oradial-gradient(2500px at 830px 50%, white, #cac9ca);
+    background: -moz-radial-gradient(2500px at 830px 50%, white, #cac9ca);
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+}
+
+.team__top{
+    font-size: 0;
+    margin-bottom: 60px;
+}
+
+.team__top-left{
+    width: 35.18%;
+    display: inline-block;
+}
+
+.team__top-right{
+   width:  64.82%;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.team__slides{
+    background-image: url("../assets/pic/decor/cook.png");
+    background-position-x: 45%;
+    background-position-y: 100%;
+    background-size: 37%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.team__slide{
+    @extend %clearfix;
+    height: 600px;
+    display: none;
+    overflow: hidden;
+}
+
+.team__slide--active{
+    display: block;
+}
+
+.team__slide-left, .team__slide-right{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $grey;
+    margin-top: 25px;
+}
+
+.team__slide-left{
+    width: 25%;
+    float: left;
+}
+
+.team__slide-right{
+    width: 31.54%;
+    float: right;
+}
+
+.team__slide-quote{
+    background-image: url("../assets/pic/decor/quote.png");
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    width: 51px;
+    height: 40px;
+}
+

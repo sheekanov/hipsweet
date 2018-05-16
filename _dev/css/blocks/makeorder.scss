@@ -1,0 +1,177 @@
+.makeorder{
+    width: 76.63%;
+    height: 410px;
+    margin: 0 auto;
+    @include border-radius(20px);
+    background-image: url("../assets/pic/decor/choco-back.jpg");
+    background-size: cover;
+    @extend %clearfix;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.makeorder__left{
+    width: 51.6%;
+    position: relative;
+    height: 100%;
+    float: left;
+    padding-left: 8.3%;
+    box-sizing: border-box;
+}
+
+.makeorder__text{
+    position: absolute;
+    @include malina();
+    font-size: 64px;
+    color: white;
+    line-height: 70px;
+    top: 50%;
+    margin-top: -70px;
+}
+
+.makeorder__right{
+    padding: 70px 8.3% 0px 5.33%;
+    width: 48.4%;
+    float: right;
+    background-color: rgba(#1d1d20, 0.84);
+    height: 100%;
+    box-sizing: border-box;
+    @include border-radius(0 20px 20px 0);
+}
+
+.makeorder__text-input{
+    border:none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 20px;
+    @include helvetica();
+    font-size: 16px;
+    color: white;
+    outline: none;
+    margin-bottom: 45px;
+    
+    &::-webkit-input-placeholder{
+        color:white;
+    }
+
+    &::-moz-placeholder{
+        color:white;
+    }
+
+    &:-moz-placeholder{
+        color:white;
+    }
+
+    &:-ms-input-placeholder{
+        color:white;
+    }
+}
+
+.makeorder__check-row{
+    position: relative;
+}
+
+.makeorder__check{
+   position: absolute;
+   left: -9999px;
+
+   &:checked+.makeorder__check-text:after{
+       display: block;
+   }
+}
+
+.makeorder__check-text{
+    color:white;
+    display: inline-block;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:before{
+        content:"";
+        display: inline-block;
+        box-sizing: border-box;
+        height: 12px;
+        width: 12px;
+        border: 1px solid #2b0c08;
+        background-color: white;
+        margin-right: 10px;
+    }
+
+    &:after{
+        content:"";
+        display: none;
+        position: absolute;
+        width: 12px;
+        height: 11px;
+        background-image: url("../assets/pic/icons/galka.png");
+        left: 0;
+        bottom: 7px;
+    }
+}
+
+.makeorder__submit-label{
+    width: 100px;
+    height: 100px;
+    @include border-radius(50%);
+    background-color: $yellow;
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    margin-bottom: -50px;
+    margin-right: -50px;
+    @include transition(300ms);
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:hover{
+        background-color: #641a00;
+
+        &:before{
+            opacity: 0;
+        }
+
+        &:after{
+            opacity: 1;
+        }
+    }
+
+    &:before{
+        content:"";
+        display: block;
+        width: 100px;
+        height: 100px;
+        @include border-radius(50%);
+        background-image: url("../assets/pic/icons/submit-arrow.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include transition(300ms);
+    }
+
+    &:after{
+        content:"";
+        display: block;
+        width: 100px;
+        height: 100px;
+        @include border-radius(50%);
+        background-image: url("../assets/pic/icons/submit-arrow-hover.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        @include transition(300ms);
+    }
+
+}
+
+.makeorder__submit{
+    position: absolute;
+    left: -9999px;
+}

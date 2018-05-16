@@ -1,0 +1,27 @@
+.whytasty{
+    width: 100%;
+    background: radial-gradient(1150px at (60% 660px), #fdfefc, #c8c7c8);
+    background: -webkit-radial-gradient(60% at (1150px 660px), #fdfefc, #c8c7c8);
+    background: -oradial-gradient(1150px at (60% 660px), #fdfefc, #c8c7c8);
+    background: -moz-radial-gradient(1150px at (60% 660px), #fdfefc, #c8c7c8);
+}
+
+.container--whytasty{
+    width: 1004px;
+    background-image: url("../assets/pic/decor/povar-whytasty.png");
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 38.14% auto;
+    background-repeat: no-repeat;
+}
+
+.whytasty__left{
+    float: left;
+    width: 54.58%;
+    margin-top: 120px;
+}
+
+.whytasty__text-block{
+    width: 75.54%;
+    margin-bottom: 70px;
+}

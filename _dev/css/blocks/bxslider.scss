@@ -1,0 +1,31 @@
+.bx-wrapper{
+    background: none;
+    border: none;
+    @include box-shadow(none);
+    margin-bottom: 0;
+}
+
+.bx-viewport{
+    overflow: initial !important;
+}
+
+.bx-pager{
+    padding-top: 0 !important;
+    position: initial !important;
+    padding-bottom: 60px;
+}
+
+.bx-pager-link{
+    width: 8px !important;
+    height: 8px !important;
+    background-color: white !important;
+    margin: 0 15px !important;
+
+    &:hover{
+        background-color: $yellow !important;
+    }
+
+    &.active{
+        background-color: $yellow !important;  
+    }
+}

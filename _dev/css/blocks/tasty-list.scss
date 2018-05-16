@@ -1,0 +1,30 @@
+.tasty-list{
+    font-size: 0;
+    margin-right: -11%;
+    margin-bottom: 60px;
+}
+
+.tasty-list__item{
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.tasty-list__pic-block{
+    height: 98px;
+    margin-bottom: 35px;
+}
+
+.tasty-list__pic{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.tasty-list__desc{
+    @include malina();
+    font-size: 16px;
+    color: $grey;
+}

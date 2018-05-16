@@ -1,0 +1,41 @@
+//Fira Sans
+@font-face {
+    font-family: 'Malina';
+    src: url('../assets/fonts/ALSMalina.woff') format('woff'),
+         url('../assets/fonts/ALSMalina.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica-Regular.woff') format('woff'),
+         url('../assets/fonts/Helvetica-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/Helvetica-Bold.woff') format('woff'),
+         url('../assets/fonts/Helvetica-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@mixin helvetica($weight: regular){
+    font-family: 'Helvetica', Arial, sans-serif;
+    @if $weight == bold {
+        font-weight: bold;
+    }
+    @else {
+        font-weight: normal;
+    }
+};
+
+@mixin malina(){
+    font-family: 'Malina', Arial, sans-serif;
+    font-weight: normal;
+};
+
+

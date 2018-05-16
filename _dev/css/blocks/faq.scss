@@ -1,0 +1,82 @@
+.faq{
+    background-image: url("../pic/decor/bcg-2.png"),
+     url("../assets/pic/decor/bcg-3.png"), 
+     url("../assets/pic/decor/bcg-5.png"),
+     url("../assets/pic/decor/bcg-6.png"),
+     url("../assets/pic/decor/bcg-7.png"),
+     url("../assets/pic/decor/bcg-1.png"),
+     url("../assets/pic/decor/bcg-4.png");
+    background-position: bottom -120px left 0, 
+    top -230px left 0, 
+    right 0 top 0, 
+    right 0 bottom -110px,
+    left 56.25% top -180px,
+    left 56.25% bottom -230px,
+    top 16% left 6.25%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.faq__wrap{
+    background: radial-gradient(1000px at (20% 660px), rgba(218,61,64,0.9), darken(rgba(218,61,64,0.9), 5%));
+    background: -webkit-radial-gradientt(1000px at (20% 660px), rgba(#a5151b,0.9), darken(rgba(#a5151b,0.9), 5%));
+    background: -oradial-gradientt(1000px at (20% 660px), rgba(#a5151b,0.9), darken(rgba(#a5151b,0.9), 5%));
+    background: -moz-radial-gradientt(1000px at (20% 660px), rgba(#a5151b,0.9), darken(rgba(#a5151b,0.9), 5%));
+    padding: 100px 0;
+    min-height: 700px;
+}
+
+.container--faq{
+    width: 965px;
+}
+
+.faq__list-item{
+    list-style: decimal;
+    color: white;
+    font-size: 22px;
+    @include transition(300ms);
+    padding-top: 20px;
+    
+    &:not(:last-child){
+        
+        padding-bottom: 20px;
+    }
+
+    &:hover{
+        color: #ffb100;
+        border-bottom-color: transparent;
+        cursor: pointer;
+
+        .faq__question{
+            border-bottom-color: transparent;
+            color: #ffb100;
+        }
+    }
+}
+
+.faq__list-item--active{
+    color: #ffb100;
+    border-bottom-color: transparent;
+    cursor: pointer;
+
+    .faq__question{
+        border-bottom-color: transparent;
+        color: #ffb100;
+    }
+}
+
+.faq__question{
+    border-bottom: 2px dashed white;
+    display: block;
+    padding-bottom: 5px;
+    @include transition(300ms);
+    color: white;
+}
+
+.faq__answer{
+    color: white;
+    padding-top: 30px;
+    font-size: 15px;
+    padding-left: 50px;
+    display: none;
+}

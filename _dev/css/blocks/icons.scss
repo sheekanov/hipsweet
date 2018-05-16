@@ -1,0 +1,58 @@
+.icons__list{
+    font-size: 0px;
+    text-align: left;
+}
+
+.icons__list-item{
+    display: inline-block;
+    margin-right: 23.68%;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.icons__block{
+    width: 40px;
+    height: 40px;
+    @include border-radius(50%);
+    opacity: 1;
+    background-image: url('../assets/pic/icons/icons-sprite.png');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    position: relative;
+    @include transition(300ms);
+
+    &:after{
+        content:"";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        @include border-radius(50%);
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        opacity: 0.1;
+    }
+
+    &:hover{
+        cursor: pointer;
+
+        &:after{
+            opacity: 0.2;
+        }
+    }
+}
+
+.icons__block--cabinet{
+    background-position-y: 11px;
+}
+
+.icons__block--search{
+    background-position-y: -31px;
+}
+
+.icons__block--ingredients{
+    background-position-y: -75px;
+    display: inline-block;
+}

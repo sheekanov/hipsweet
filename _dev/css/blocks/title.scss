@@ -1,0 +1,37 @@
+.title{
+    font-size: 62px;
+    line-height: 1.2;
+    @include malina();
+    color: $blue;
+    margin-bottom: 25px;
+}
+
+.title--team{
+    line-height: 1.2;
+    margin: 0;
+}
+
+.title--main-section{
+    color: white;
+}
+
+.title--wedeliver{
+    color: #393939;
+    text-align: center;
+    width: 780px;
+    margin: 0 auto;
+    
+}
+
+.title--deliver-list{
+    color: #393939;
+    text-align: center;
+    font-size: 32px;
+}
+
+.title--faq{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 65px;
+}

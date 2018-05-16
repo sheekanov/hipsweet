@@ -1,0 +1,24 @@
+{
+  "name": "hipsweet",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "sheekanov"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "jquery": "^3.3.1",
+    "jquery-mask-plugin": "jquery-mask#^1.14.15",
+    "bxslider-4": "bxSlider#^4.2.15"
+  }
+}

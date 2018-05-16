@@ -1,0 +1,35 @@
+.logo{
+    font-size: 0;
+}
+
+.logo__link{
+    display: block;
+}
+
+.logo__pic-block{
+    width: 29%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo__pic{
+    max-width: 100%;
+}
+
+.logo__text-block{
+    display: inline-block;
+    width: 71%;
+    color: $yellow;
+    @include malina();
+    font-size: 35px;
+    vertical-align: middle;
+    text-align: right;
+    word-break: break-all;
+}
+
+.logo--footer{
+    .logo__text-block{
+        font-size: 30px;
+    }
+}
