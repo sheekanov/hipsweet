@@ -17,7 +17,6 @@
     <!-- endbuild -->
 </head>
 <body>
-
     <div class="wrapper">
         <div class="maincontent">
             <!--[if lt IE 9]>
@@ -732,6 +731,9 @@
                     </div>
                 </div>
             </section>
+            <section class="map-section">
+                <div class="map" id="map"></div>
+            </section>
         </div>
     </div>
     <footer class="footer">
@@ -790,8 +792,11 @@
     <!-- endbower -->
     <!-- emndbuild -->
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     <!-- build:js JS/script.min.js -->
     <script src="JS/script.js"></script>
+    <script src="js/map.js"></script>
     <!-- endbuild -->
 </body>
 </html>

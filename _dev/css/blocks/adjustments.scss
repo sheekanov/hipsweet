@@ -59,7 +59,7 @@ body {
 footer {
 	height: $footer-height;
 	min-width: $container-width+40px;
-	
+	box-sizing: border-box;
 	margin-top: -$footer-height;
 	position: relative;
 }
