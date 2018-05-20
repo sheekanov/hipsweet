@@ -141,4 +141,11 @@
         left: -13px;
         @include transform(translateX(0));
     }
+
+    .dropdown__placeholder{
+        width: 60px;
+        height: 100%;
+        top: 0;
+        left: -60px;
+    }
 }

@@ -76,8 +76,11 @@
 
 .faq__answer{
     color: white;
-    padding-top: 30px;
     font-size: 15px;
     padding-left: 50px;
     display: none;
+}
+
+.faq__answer-inner{
+    padding-top: 30px;
 }
