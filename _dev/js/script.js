@@ -1,11 +1,51 @@
 $(document).ready(function(){
 
+//прокрутка по якорю
+(function(){
+    $('.anchor__link').on('click', function(e){
+        e.preventDefault();
+        $('html, body').stop(true, true);
+
+        var $this = $(this),
+            targetId = $this.attr('href'),
+            targetOffset = $(targetId).offset().top;
+
+        $('html, body').animate({scrollTop: targetOffset}, 1000);
+    });
+}());
+
+//ссылка на члена команды
+(function(){
+    $('.dropdown__team-item').on('click', function(){
+        var $this = $(this);
+            ndx = $this.index(),
+            slides = $('.team__slide'),
+            tabs = $('.tabs__item'),
+            currentSlide = slides.filter('.team__slide--active');
+            targetSlide = slides.eq(ndx),
+            currentTab = tabs.filter('.tabs__item--active'),
+            targetTab = tabs.eq(ndx);
+            
+            currentSlide.removeClass('team__slide--active');
+            currentTab.removeClass('tabs__item--active');
+            targetSlide.addClass('team__slide--active');
+            targetTab.addClass('tabs__item--active');
+    });
+})();
+
+
 //bx slider
 (function(){
-    $('.main-section__slides').bxSlider({
+    var slider =$('.main-section__slides').bxSlider({
         slideMargin: 1000,
         controls: false
     });
+
+    $('.dropdown__sweet-item').on('click', function(e){
+        e.preventDefault();
+        ndx = $(this).index();
+        slider.goToSlide(ndx);
+    })
 }());
 
 //маске для телефона в форме
@@ -81,7 +121,7 @@ $(document).ready(function(){
                         flag = true;
                     });
                 })
-            }
+            }else{flag = true;}
 
 
 
@@ -106,3 +146,4 @@ $(window).ready(function(){
         })
     })()
 })
+
